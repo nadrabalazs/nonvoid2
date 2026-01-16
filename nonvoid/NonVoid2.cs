@@ -32,8 +32,18 @@
     /// <returns>The smaller value</returns>
     public int Smaller(int num1, int num2)
     {
-        // TODO : Implement minimum comparison
-        throw new NotImplementedException();
+        // TODO : Simon
+        int Smaller = 0;
+        if (num1 < num2)
+        {
+            Smaller = num1;
+            
+        }
+        else
+        {
+            Smaller = num2;
+        }
+        return Smaller;
     }
 
     /// <summary>
@@ -48,8 +58,20 @@
     public string FortuneCookie()
     {
         int num = new Random().Next(0, 5);
-        // TODO : Return fortune cookie response based on random number
-        throw new NotImplementedException();
+        Random rand = new Random(); int number = rand.Next(0, 5); switch (number)
+        {
+            case 0: return "Your future looks bright";
+            case 1: return "I see love in your future";
+            case 2: return "Maybe you better stay home today";
+            case 3: return "You will have fame and fortune";
+            case 4: return "Happiness you will have";
+            default:
+                return "Try again later";
+
+
+                // TODO : Return fortune cookie response based on random number
+                throw new NotImplementedException();
+        }
     }
 
     /// <summary>
@@ -76,7 +98,16 @@
     /// <returns>The string "even" or the string "odd"</returns>
     public string EvenOdd(int num)
     {
-        // TODO : Determine if number is even or odd
+        // TODO : Simon
+        //If the remainder of num divided by 2 is 0, it's even 
+        if (num % 2 == 0) 
+        { 
+            return "even"; 
+        } 
+        else 
+        { 
+            return "odd"; 
+        }
         throw new NotImplementedException();
     }
 
