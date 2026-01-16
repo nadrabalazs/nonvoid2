@@ -8,8 +8,7 @@
     public int Square(int num)
     {
         return num * num;
-        Console.WriteLine("a");
-        throw new NotImplementedException();
+        // TODO : Nádra
     }
 
     /// <summary>
@@ -22,7 +21,7 @@
     public int SumThree(int num1, int num2, int num3)
     {
         return num1 + num2 + num3;
-        throw new NotImplementedException();
+        // TODO : Nádra
     }
 
     /// <summary>
@@ -64,8 +63,15 @@
     /// <returns>A string response</returns>
     public string Season(int month)
     {
-        // TODO : Return season based on month value
-        throw new NotImplementedException();
+        return month switch
+        {
+            >= 1 and <= 3 => "winter",
+            >= 4 and <= 6 => "spring",
+            >= 7 and <= 9 => "summer",
+            >= 10 and <= 12 => "fall",
+            _ => "invalid month" // Handles numbers outside 1-12
+        };
+        // TODO : Nádra
     }
 
     /// <summary>
