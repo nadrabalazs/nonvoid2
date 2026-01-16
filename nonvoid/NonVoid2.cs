@@ -8,6 +8,7 @@
     public int Square(int num)
     {
         return num * num;
+        Console.WriteLine("a");
         throw new NotImplementedException();
     }
 
