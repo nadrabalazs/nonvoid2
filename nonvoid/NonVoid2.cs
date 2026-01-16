@@ -69,7 +69,7 @@
                 return "Try again later";
 
 
-                // TODO : Return fortune cookie response based on random number
+                // TODO : Simon
                 throw new NotImplementedException();
         }
     }
